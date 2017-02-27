@@ -27,7 +27,7 @@ x-ibm-configuration:
       - invoke:
           target-url: >-
             https://apim-services.mybluemix.net/banka/v1/loans/quote?apr=$(request.parameters.rate)&amount=$(request.parameters.loan)&term=$(request.parameters.duration)
-  gateway: micro-gateway
+  gateway: datapower-gateway
 paths:
   /quote:
     get:
